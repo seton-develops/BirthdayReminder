@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientpurple"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/addBirthdayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Birthday"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.221" />
+
+    <TextView
+        android:id="@+id/labelMotto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Never Forget Someone's \n     Special Day Again!"
+        android:textColor="#D1A4A4"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/addBirthdayButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/mainActivityRightArrow"
+        android:layout_width="121dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="492dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addBirthdayButton"
+        app:srcCompat="@drawable/arrow_right" />
+
+    <TableLayout
+        android:layout_width="307dp"
+        android:layout_height="288dp"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toTopOf="@+id/mainActivityRightArrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addBirthdayButton">
+
+        //labels for (JAN, FEB, MAR) three months
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvJanuaryLabelMA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/bangers"
+                android:gravity="center_horizontal"
+                android:text="JAN"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvFebruaryLabelMA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/bangers"
+                android:gravity="center_horizontal"
+                android:text="FEB"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvMarchLabelMA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/bangers"
+                android:gravity="center_horizontal"
+                android:text="MAR"
+                android:textSize="20sp" />
+        </TableRow>
+
+        //Values for (JAN, FEB, MAR) three months
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvJanuaryValueMA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/bangers"
+                android:gravity="center_horizontal"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/tvFebruaryValueMA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/bangers"
+                android:gravity="center_horizontal"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/tvMarchValueMA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/bangers"
+                android:gravity="center_horizontal"
+                android:textColor="#F8F0F0"
+                android:textColorHighlight="@color/white"
+                android:textSize="20sp"
+                tools:text="0" />
+        </TableRow>
+
+        //Labels for (APR, MAY, JUN)
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvAprilLabelMA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/bangers"
+                android:gravity="center_horizontal"
+                android:text="APR"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvMayLabelMA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/bangers"
+                android:gravity="center_horizontal"
+                android:text="MAY"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvJuneLabelMA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/bangers"
+                android:gravity="center_horizontal"
+                android:text="JUN"
+                android:textSize="20sp" />
+        </TableRow>
+
+        //Values for (APR, MAY, JUN)
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvAprilValueMA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/bangers"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/tvMayValueMA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/bangers"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/tvJuneValueMA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/bangers"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:text="0" />
+        </TableRow>
+
+        //Labels for JUL, AUG, SEP
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvJulyLabelMA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/bangers"
+                android:gravity="center_horizontal"
+                android:text="JUL"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvAugustLabelMA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/bangers"
+                android:gravity="center_horizontal"
+                android:text="AUG"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvSeptemberLabelMA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/bangers"
+                android:gravity="center_horizontal"
+                android:text="SEP"
+                android:textSize="20sp" />
+        </TableRow>
+
+        //Values for JUL, AUG, SEP
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvJulyValueMA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/bangers"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/tvAugustValueMA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/bangers"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/tvSeptemberValueMA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/bangers"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:text="0" />
+        </TableRow>
+
+
+        //Labels for OCT, NOV, DEC
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvOctoberLabelMA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/bangers"
+                android:gravity="center_horizontal"
+                android:text="OCT"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvNovemberLabelMA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/bangers"
+                android:gravity="center_horizontal"
+                android:text="NOV"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvDecemberLabelMA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/bangers"
+                android:gravity="center_horizontal"
+                android:text="DEC"
+                android:textSize="20sp" />
+        </TableRow>
+
+        //Values for OCT, NOV, DEC
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvOctoberValueMA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/bangers"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/tvNovemberValueMA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/bangers"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/tvDecemberValueMA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/bangers"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:text="0" />
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

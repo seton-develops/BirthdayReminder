@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background= "@drawable/recyclerview_divider"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/tvProfileFullName"
+        android:layout_width="220dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Full Name" />
+
+    <TextView
+        android:id="@+id/tvProfileBirthdayDate"
+        android:layout_width="220dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfileFullName"
+        tools:layout_editor_absoluteX="10dp"
+        tools:text="DOB" />
+
+    <Button
+        android:id="@+id/buttonProfileEdit"
+        android:layout_width="73dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="5dp"
+        android:background="#FFF"
+        android:backgroundTint= "@color/black"
+        android:text="EDIT"
+        android:textColor="#757575"
+        app:layout_constraintBottom_toBottomOf="@+id/tvProfileBirthdayDate"
+        app:layout_constraintStart_toEndOf="@+id/tvProfileFullName"
+        app:layout_constraintTop_toTopOf="@+id/tvProfileFullName" />
+
+    <Button
+        android:id="@+id/buttonProfileDelete"
+        android:layout_width="70dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="5dp"
+        android:background="#FFF"
+        android:backgroundTint= "@color/teal_200"
+        android:text="DEL"
+        android:textColor="#757575"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonProfileEdit"
+        app:layout_constraintStart_toEndOf="@+id/buttonProfileEdit"
+        app:layout_constraintTop_toTopOf="@+id/buttonProfileEdit" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
