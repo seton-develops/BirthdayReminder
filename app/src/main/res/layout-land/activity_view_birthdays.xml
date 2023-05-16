@@ -8,46 +8,48 @@
 
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/topHORGuide"
+        android:id="@+id/topHORGUIDE"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.025" />
+        app:layout_constraintGuide_percent="0.05" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/midHORGUIDE1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.125" />
+        app:layout_constraintGuide_percent="0.15" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/bottomHORGUIDE"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.85" />
+        app:layout_constraintGuide_percent="0.80" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/leftVERGUIDE"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.025" />
+        app:layout_constraintGuide_percent="0.05" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/midVERGUIDE1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.36" />
+        app:layout_constraintGuide_percent="0.15" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/rightHORGUIDE"
+        android:id="@+id/rightVERGUIDE"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.975" />
+        app:layout_constraintGuide_percent="0.95" />
+
+
 
     <TextView
         android:id="@+id/recycleViewLabel"
@@ -57,37 +59,33 @@
         android:text="BIRTHDAYS"
         android:fontFamily="@font/bangers"
         android:autoSizeTextType="uniform"
-        app:layout_constraintTop_toTopOf="@id/topHORGuide"
         app:layout_constraintBottom_toTopOf="@+id/midHORGUIDE1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
+        app:layout_constraintTop_toTopOf="@id/topHORGUIDE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/birthdayRecycleView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/recycleViewLeftArrow"
-        app:layout_constraintDimensionRatio="1:1.8"
+        app:layout_constraintBottom_toTopOf="@+id/bottomHORGUIDE"
+        app:layout_constraintDimensionRatio="5:2"
+        app:layout_constraintEnd_toStartOf="@+id/rightVERGUIDE"
         app:layout_constraintStart_toStartOf="@+id/leftVERGUIDE"
-        app:layout_constraintEnd_toStartOf="@+id/rightHORGUIDE"
-        app:layout_constraintTop_toTopOf="@+id/midHORGUIDE1"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="@+id/midHORGUIDE1" />
+
 
     <ImageView
         android:id="@+id/recycleViewLeftArrow"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:contentDescription="arrow to return to main activity"
+        android:contentDescription="return to main activity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toStartOf="@+id/midVERGUIDE1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/bottomHORGUIDE"
         app:srcCompat="@drawable/arrow_left" />
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

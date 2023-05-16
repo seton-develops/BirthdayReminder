@@ -8,4 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name ="gray">#F9F4ED</color>
+    <color name = "orange_peel">#FF9F00</color>
+    <color name = "light_gray">#D4D4D4</color>
+    <color name = "slate_pink">#EB9199</color>
+    <color name = "highlight_purple">#AA3456</color>
+
 </resources>

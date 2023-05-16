@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.setonMyProjects.birthdayreminder.BirthdayDetailsPopUp">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topHORGUIDE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/mid1HORGUIDE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.36" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/mid2HORGUIDE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.71" />
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomHORGUIDE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftVERGUIDE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/midVERGUIDE0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.34" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/midVERGUIDE1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.40" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/midVERGUIDE2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/midVERGUIDE3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.70" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightVERGUIDE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+
+    <ImageView
+        android:id="@+id/balloonImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomHORGUIDE"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/midVERGUIDE1"
+
+        app:layout_constraintStart_toStartOf="@+id/leftVERGUIDE"
+        app:layout_constraintTop_toTopOf="@+id/topHORGUIDE"
+        app:srcCompat="@drawable/pixelballoonsdrawable" />
+
+
+    <TextView
+        android:id="@+id/etPopupBirthday"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="Birthday MM/DD/YYYY"
+        android:gravity="center"
+        android:inputType="none"
+        android:clickable="true"
+        android:background="@drawable/editviewbackground"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/mid2HORGUIDE"
+        app:layout_constraintDimensionRatio="2.5:0.75"
+        app:layout_constraintEnd_toEndOf="@+id/etPopupFullName"
+        app:layout_constraintStart_toStartOf="@+id/etPopupFullName"
+        style ="@android:style/TextAppearance.Medium"
+        app:layout_constraintTop_toTopOf="@+id/mid1HORGUIDE" />
+
+    <EditText
+        android:id="@+id/etPopupFullName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="Enter Name Here"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:background="@drawable/editviewbackground"
+        app:layout_constraintBottom_toTopOf="@+id/mid1HORGUIDE"
+        app:layout_constraintDimensionRatio="2.5:0.75"
+        app:layout_constraintEnd_toStartOf="@+id/rightVERGUIDE"
+        app:layout_constraintStart_toStartOf="@+id/midVERGUIDE1"
+        style ="@android:style/TextAppearance.Medium"
+        app:layout_constraintTop_toBottomOf="@+id/topHORGUIDE" />
+
+    <Button
+        android:id="@+id/buttonCancel"
+        style="@android:style/TextAppearance.Large"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/roundcornerbutton"
+        android:backgroundTint="@color/light_gray"
+        android:text="Exit"
+        app:layout_constraintBottom_toTopOf="@+id/bottomHORGUIDE"
+        app:layout_constraintDimensionRatio="2:1"
+        app:layout_constraintEnd_toEndOf="@+id/etPopupBirthday"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintStart_toStartOf="@+id/midVERGUIDE3"
+        app:layout_constraintTop_toTopOf="@+id/mid2HORGUIDE" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        style="@android:style/TextAppearance.Large"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/roundcornerbutton"
+        android:backgroundTint="@color/teal_200"
+        android:text="Save"
+        app:layout_constraintBottom_toTopOf="@+id/bottomHORGUIDE"
+        app:layout_constraintDimensionRatio="2:1"
+        app:layout_constraintEnd_toStartOf="@+id/midVERGUIDE2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintStart_toStartOf="@+id/etPopupBirthday"
+        app:layout_constraintTop_toTopOf="@+id/mid2HORGUIDE" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,74 +5,130 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".BirthdayDetailsPopUp">
+    tools:context="com.setonMyProjects.birthdayreminder.BirthdayDetailsPopUp">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topHORGUIDE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/midHORGUIDE1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/midHORGUIDE2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/midHORGUIDE3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.67" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/midVERGUIDE1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/midVERGUIDE2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.55" />
+
 
     <ImageView
         android:id="@+id/balloonImage"
-        android:layout_width="197dp"
-        android:layout_height="168dp"
-        android:layout_marginTop="15dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/midHORGUIDE1"
+        app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/birthday_balloons" />
+        app:layout_constraintTop_toTopOf="@id/topHORGUIDE"
+        app:srcCompat="@drawable/pixelballoonsdrawable" />
+
+
+    <EditText
+        android:id="@+id/etPopupFullName"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="2:0.5"
+        android:background="@drawable/editviewbackground"
+        android:gravity="center"
+        android:hint="Enter Name Here"
+        android:inputType="textPersonName"
+        android:maxLength="35"
+        app:layout_constraintBottom_toTopOf="@+id/midHORGUIDE3"
+        app:layout_constraintEnd_toEndOf="@+id/balloonImage"
+        app:layout_constraintStart_toStartOf="@+id/balloonImage"
+        app:layout_constraintTop_toBottomOf="@+id/midHORGUIDE1" />
+
+
+    <TextView
+        android:id="@+id/etPopupBirthday"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/editviewbackground"
+        android:clickable="true"
+        android:gravity="center"
+        android:hint="Birthday MM/DD/YYYY"
+        android:maxLength="10"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/midHORGUIDE2"
+        app:layout_constraintDimensionRatio="2:0.5"
+        app:layout_constraintEnd_toEndOf="@+id/balloonImage"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/balloonImage"
+        app:layout_constraintTop_toTopOf="@+id/midHORGUIDE3"
+        app:layout_constraintVertical_bias="0.253" />
 
     <Button
         android:id="@+id/buttonCancel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
-        android:text="Cancel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="2:1"
+        android:background="@drawable/roundcornerbutton"
+        android:backgroundTint="@color/light_gray"
+        android:text="Exit"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/tvBirthdayDate"
-        app:layout_constraintHorizontal_bias="0.764"
-        app:layout_constraintStart_toEndOf="@+id/buttonSave"
-        app:layout_constraintTop_toBottomOf="@+id/tvBirthdayDate"
-        app:layout_constraintVertical_bias="0.09" />
+        app:layout_constraintEnd_toEndOf="@+id/balloonImage"
+        app:layout_constraintStart_toStartOf="@+id/midVERGUIDE2"
+        app:layout_constraintTop_toTopOf="@+id/midHORGUIDE2"
+        style ="@android:style/TextAppearance.Large"
+        app:layout_constraintVertical_bias="0.0"/>/>
 
     <Button
         android:id="@+id/buttonSave"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="2:1"
+        android:background="@drawable/roundcornerbutton"
+        android:backgroundTint="@color/teal_200"
         android:text="Save"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/tvBirthdayDate"
-        app:layout_constraintTop_toBottomOf="@+id/tvBirthdayDate"
-        app:layout_constraintVertical_bias="0.09" />
+        app:layout_constraintEnd_toStartOf="@+id/midVERGUIDE1"
+        app:layout_constraintStart_toStartOf="@+id/balloonImage"
+        app:layout_constraintTop_toTopOf="@+id/midHORGUIDE2"
+        style ="@android:style/TextAppearance.Large"
+        app:layout_constraintVertical_bias="0.0"/>
 
-    <EditText
-        android:id="@+id/tvBirthdayDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="Birthday MM/DD/YYYY"
-        android:inputType="date"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvFullName" />
 
-    <EditText
-        android:id="@+id/tvFullName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="75dp"
-        android:ems="10"
-        android:hint="Full Name"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/balloonImage"
-        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

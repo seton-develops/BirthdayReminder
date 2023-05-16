@@ -3,13 +3,31 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Sean Tonthat/AndroidStudioProjects/BirthdayReminder2/app/src/main/res/drawable-anydpi/ic_temp_icon.xml" value="0.1355" />
+        <entry key="..\:/Users/Sean Tonthat/AndroidStudioProjects/BirthdayReminder2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.261" />
+        <entry key="..\:/Users/Sean Tonthat/AndroidStudioProjects/BirthdayReminder2/app/src/main/res/drawable-xxxhdpi/editviewbackground.xml" value="0.261" />
+        <entry key="..\:/Users/Sean Tonthat/AndroidStudioProjects/BirthdayReminder2/app/src/main/res/drawable-xxxhdpi/textviewbackground.xml" value="0.261" />
+        <entry key="..\:/Users/Sean Tonthat/AndroidStudioProjects/BirthdayReminder2/app/src/main/res/drawable/arrow_background.xml" value="0.1" />
         <entry key="..\:/Users/Sean Tonthat/AndroidStudioProjects/BirthdayReminder2/app/src/main/res/drawable/gradientpurple.xml" value="0.2335" />
+        <entry key="..\:/Users/Sean Tonthat/AndroidStudioProjects/BirthdayReminder2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.153" />
+        <entry key="..\:/Users/Sean Tonthat/AndroidStudioProjects/BirthdayReminder2/app/src/main/res/drawable/pink_background.xml" value="0.2805" />
         <entry key="..\:/Users/Sean Tonthat/AndroidStudioProjects/BirthdayReminder2/app/src/main/res/drawable/recyclerview_divider.xml" value="0.2005" />
+        <entry key="..\:/Users/Sean Tonthat/AndroidStudioProjects/BirthdayReminder2/app/src/main/res/drawable/roundcornerbutton.xml" value="0.2335" />
+        <entry key="..\:/Users/Sean Tonthat/AndroidStudioProjects/BirthdayReminder2/app/src/main/res/drawable/roundedbutton.xml" value="0.1725" />
+        <entry key="..\:/Users/Sean Tonthat/AndroidStudioProjects/BirthdayReminder2/app/src/main/res/drawable/roundedcorners.xml" value="0.503" />
+        <entry key="..\:/Users/Sean Tonthat/AndroidStudioProjects/BirthdayReminder2/app/src/main/res/layout-land/activity_birthday_details_pop_up.xml" value="0.22" />
+        <entry key="..\:/Users/Sean Tonthat/AndroidStudioProjects/BirthdayReminder2/app/src/main/res/layout-land/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Sean Tonthat/AndroidStudioProjects/BirthdayReminder2/app/src/main/res/layout-land/activity_view_birthdays.xml" value="0.33" />
         <entry key="..\:/Users/Sean Tonthat/AndroidStudioProjects/BirthdayReminder2/app/src/main/res/layout/activity_birthday_details_pop_up.xml" value="0.33" />
-        <entry key="..\:/Users/Sean Tonthat/AndroidStudioProjects/BirthdayReminder2/app/src/main/res/layout/activity_main.xml" value="0.425" />
+        <entry key="..\:/Users/Sean Tonthat/AndroidStudioProjects/BirthdayReminder2/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Sean Tonthat/AndroidStudioProjects/BirthdayReminder2/app/src/main/res/layout/activity_person_profile.xml" value="0.4239583333333333" />
-        <entry key="..\:/Users/Sean Tonthat/AndroidStudioProjects/BirthdayReminder2/app/src/main/res/layout/activity_view_birthdays.xml" value="0.4239583333333333" />
+        <entry key="..\:/Users/Sean Tonthat/AndroidStudioProjects/BirthdayReminder2/app/src/main/res/layout/activity_view_birthdays.xml" value="0.25" />
         <entry key="..\:/Users/Sean Tonthat/AndroidStudioProjects/BirthdayReminder2/app/src/main/res/layout/profile.xml" value="0.33" />
+        <entry key="..\:/Users/Sean Tonthat/AndroidStudioProjects/BirthdayReminder2/app/src/main/res/layout/profile_layout.xml" value="0.6398809523809523" />
+        <entry key="..\:/Users/Sean Tonthat/AndroidStudioProjects/BirthdayReminder2/app/src/main/res/mipmap-anydpi-v26/arrow_round.xml" value="0.1355" />
+        <entry key="..\:/Users/Sean Tonthat/AndroidStudioProjects/BirthdayReminder2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1355" />
+        <entry key="..\:/Users/Sean Tonthat/AndroidStudioProjects/BirthdayReminder2/app/src/main/res/mipmap-anydpi-v26/pixelballoon.xml" value="0.1355" />
+        <entry key="..\:/Users/Sean Tonthat/AndroidStudioProjects/BirthdayReminder2/app/src/main/res/mipmap-anydpi-v26/pixelballoon_round.xml" value="0.1355" />
       </map>
     </option>
   </component>

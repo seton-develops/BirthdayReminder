@@ -7,73 +7,21 @@
     android:background="@drawable/pink_background"
     tools:context="com.setonMyProjects.birthdayreminder.MainActivity">
 
-
-
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/midHORGUIDE1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.3" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/midHORGUIDE2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.85" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/leftVERGUIDE"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.10" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/rightVERGUIDE"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.90" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/midVERGUIDE1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.30" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/midVERGUIDE3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.70" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/midVERGUIDE2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.64" />
-
     <TextView
         android:id="@+id/tvClickReminder"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:autoSizeTextType="uniform"
         android:fontFamily="@font/bangers"
+        android:scaleType="centerInside"
         android:text="Tap On Cake!"
         android:textColor="#353233"
-        app:layout_constraintBottom_toBottomOf="@+id/addBirthdayButton"
         app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintEnd_toStartOf="@+id/addBirthdayButton"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@id/leftVERGUIDE"
-        app:layout_constraintTop_toTopOf="@+id/addBirthdayButton"
-        app:layout_constraintVertical_bias="0.522" />
+        app:layout_constraintStart_toStartOf="@id/tableLayoutVERGUIDE1"
+        app:layout_constraintEnd_toStartOf="@+id/verGuide"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/topHORGUIDE"
+        app:layout_constraintHorizontal_bias="1.0"/>
 
     <Button
         android:id="@+id/addBirthdayButton"
@@ -81,11 +29,69 @@
         android:layout_height="0dp"
         android:background="@drawable/cake_choco"
         android:contentDescription="Add a birthday to your list!"
+        app:layout_constraintBottom_toBottomOf="@id/topHORGUIDE"
         app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/tableLayoutVERGUIDE2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/verGuide"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/midHORGUIDE1"
-        app:layout_constraintStart_toStartOf="@id/midVERGUIDE1"
-        app:layout_constraintEnd_toEndOf="@id/midVERGUIDE3" />
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topHORGUIDE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.22" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/addBirthdayButtonHORGUIDE1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomHORGUIDE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/mainActivityRightArrowHORGUIDE1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/tableLayoutVERGUIDE1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/tableLayoutVERGUIDE2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/midVERGUIDE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
 
     <ImageView
         android:id="@+id/mainActivityRightArrow"
@@ -94,11 +100,11 @@
         android:adjustViewBounds="true"
         android:contentDescription="Go to database activity"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="@+id/midVERGUIDE"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@id/midVERGUIDE2"
-        app:layout_constraintTop_toTopOf="@+id/midHORGUIDE2"
+        app:layout_constraintTop_toBottomOf="@+id/mainActivityRightArrowHORGUIDE1"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:srcCompat="@drawable/arrow_right" />
 
     <TableLayout
@@ -106,15 +112,13 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:stretchColumns="*"
-        app:layout_constraintBottom_toTopOf="@+id/midHORGUIDE2"
-        app:layout_constraintDimensionRatio="7:10"
-        app:layout_constraintEnd_toEndOf="@id/rightVERGUIDE"
-        app:layout_constraintStart_toStartOf="@id/leftVERGUIDE"
-        app:layout_constraintTop_toTopOf="@+id/midHORGUIDE1">
+        app:layout_constraintBottom_toBottomOf="@id/bottomHORGUIDE"
+        app:layout_constraintDimensionRatio="5.5:2.1"
+        app:layout_constraintEnd_toEndOf="@id/tableLayoutVERGUIDE2"
+        app:layout_constraintStart_toStartOf="@id/tableLayoutVERGUIDE1"
+        app:layout_constraintTop_toBottomOf="@id/addBirthdayButtonHORGUIDE1">
 
-
-
-        //labels for (JAN, FEB, MAR) three months
+        //labels for (JAN, FEB, MAR, APR) four months
 
         <TableRow
             android:layout_width="0dp"
@@ -150,9 +154,19 @@
                 android:fontFamily="@font/bangers"
                 android:gravity="center_horizontal"
                 android:text="MAR" />
+
+            <TextView
+                android:id="@+id/tvAprilLabelMA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/bangers"
+                android:gravity="center_horizontal"
+                android:text="APR" />
         </TableRow>
 
-        //Values for (JAN, FEB, MAR) three months
+        //Values for (JAN, FEB, MAR, APR) four months
 
         <TableRow
             android:layout_width="0dp"
@@ -191,24 +205,25 @@
                 android:gravity="center_horizontal"
                 android:textColor="#FFFFFF"
                 tools:text="0" />
-        </TableRow>
-
-        //Labels for (APR, MAY, JUN)
-
-        <TableRow
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1">
 
             <TextView
-                android:id="@+id/tvAprilLabelMA"
+                android:id="@+id/tvAprilValueMA"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:autoSizeTextType="uniform"
                 android:fontFamily="@font/bangers"
                 android:gravity="center_horizontal"
-                android:text="APR" />
+                android:textColor="@color/white"
+                tools:text="0" />
+        </TableRow>
+
+        //Labels for (MAY, JUN, JUL, AUG)
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1">
 
             <TextView
                 android:id="@+id/tvMayLabelMA"
@@ -229,25 +244,35 @@
                 android:fontFamily="@font/bangers"
                 android:gravity="center_horizontal"
                 android:text="JUN" />
-        </TableRow>
-
-        //Values for (APR, MAY, JUN)
-
-        <TableRow
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1">
 
             <TextView
-                android:id="@+id/tvAprilValueMA"
+                android:id="@+id/tvJulyLabelMA"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:autoSizeTextType="uniform"
                 android:fontFamily="@font/bangers"
                 android:gravity="center_horizontal"
-                android:textColor="@color/white"
-                tools:text="0" />
+                android:text="JUL" />
+
+            <TextView
+                android:id="@+id/tvAugustLabelMA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/bangers"
+                android:gravity="center_horizontal"
+                android:text="AUG" />
+        </TableRow>
+
+        //Values for (MAY, JUN, JUL, AUG)
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
 
             <TextView
                 android:id="@+id/tvMayValueMA"
@@ -270,52 +295,6 @@
                 android:gravity="center_horizontal"
                 android:textColor="@color/white"
                 tools:text="0" />
-        </TableRow>
-
-        //Labels for JUL, AUG, SEP
-
-        <TableRow
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1">
-
-            <TextView
-                android:id="@+id/tvJulyLabelMA"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:autoSizeTextType="uniform"
-                android:fontFamily="@font/bangers"
-                android:gravity="center_horizontal"
-                android:text="JUL" />
-
-            <TextView
-                android:id="@+id/tvAugustLabelMA"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:autoSizeTextType="uniform"
-                android:fontFamily="@font/bangers"
-                android:gravity="center_horizontal"
-                android:text="AUG" />
-
-            <TextView
-                android:id="@+id/tvSeptemberLabelMA"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:autoSizeTextType="uniform"
-                android:fontFamily="@font/bangers"
-                android:gravity="center_horizontal"
-                android:text="SEP" />
-        </TableRow>
-
-        //Values for JUL, AUG, SEP
-
-        <TableRow
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1">
 
             <TextView
                 android:id="@+id/tvJulyValueMA"
@@ -339,25 +318,25 @@
                 android:textColor="@color/white"
                 tools:text="0" />
 
+
+        </TableRow>
+
+        //Labels for (SEP, OCT, NOV, DEC)
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
             <TextView
-                android:id="@+id/tvSeptemberValueMA"
+                android:id="@+id/tvSeptemberLabelMA"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:autoSizeTextType="uniform"
                 android:fontFamily="@font/bangers"
                 android:gravity="center_horizontal"
-                android:textColor="@color/white"
-                tools:text="0" />
-        </TableRow>
-
-
-        //Labels for OCT, NOV, DEC
-
-        <TableRow
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1">
+                android:text="SEP" />
 
             <TextView
                 android:id="@+id/tvOctoberLabelMA"
@@ -390,12 +369,24 @@
                 android:text="DEC" />
         </TableRow>
 
-        //Values for OCT, NOV, DEC
+        //Values for (SEP, OCT, NOV, DEC)
 
         <TableRow
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_weight="1">
+
+
+            <TextView
+                android:id="@+id/tvSeptemberValueMA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/bangers"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                tools:text="0" />
 
             <TextView
                 android:id="@+id/tvOctoberValueMA"
@@ -430,6 +421,7 @@
                 android:textColor="@color/white"
                 tools:text="0" />
         </TableRow>
+
     </TableLayout>
 
 
