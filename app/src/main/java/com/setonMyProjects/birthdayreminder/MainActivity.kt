@@ -1,15 +1,13 @@
 package com.setonMyProjects.birthdayreminder
 
-import android.app.Dialog
 import android.app.Notification
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.content.Context
 import android.content.Intent
-import android.content.pm.ActivityInfo
 import android.os.Build
 import android.os.Bundle
-import android.util.DisplayMetrics
+import android.text.method.LinkMovementMethod
 import android.util.Log
 import android.widget.*
 import androidx.annotation.RequiresApi
@@ -155,14 +153,12 @@ class MainActivity : AppCompatActivity() {
 
         showDateListener(this, popupBirthday) //fine
         popupBirthday.setOnClickListener {
-            Log.i("TEST 123", popupBirthday.text.toString())
             if (popupBirthday.text.toString().equals("")) {
                 showDateListener(this, popupBirthday)
             }
             else {
                 //Edit text was initialized by date picker
                 //We need to initialize the date picker to the previously set date
-                Log.i("TEST 456", popupBirthday.text.toString())
                 val monthInt = popupBirthday.text
                     .subSequence(0,2)
                     .trimStart('0')
@@ -275,6 +271,7 @@ class MainActivity : AppCompatActivity() {
 
         val policyURL: TextView = popupView.findViewById(R.id.tvPrivacyText)
         policyURL.setTextIsSelectable(true)
+        policyURL.movementMethod = LinkMovementMethod.getInstance()
 
 
         val dialogInstance = dialog.setView(popupView).create()
