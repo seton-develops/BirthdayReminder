@@ -30,11 +30,11 @@ class MainActivity : AppCompatActivity() {
     //main page
     private lateinit var addBirthdayButton: Button
 
-    //popup menu
-    private lateinit var popupSaveButton: Button
-    private lateinit var popupCancelButton: Button
 
     private lateinit var mainActivityRightButton: ImageView
+
+    //about button
+    private lateinit var privacyButton: ImageView
 
     companion object {
         private var startedApplicationFlag: Boolean = true
@@ -49,6 +49,7 @@ class MainActivity : AppCompatActivity() {
 
         addBirthdayButton = findViewById(R.id.addBirthdayButton)
         mainActivityRightButton = findViewById(R.id.mainActivityRightArrow)
+        privacyButton = findViewById(R.id.privacyButton)
 
         Thread(Runnable {
             this.runOnUiThread(java.lang.Runnable {
@@ -67,6 +68,10 @@ class MainActivity : AppCompatActivity() {
 
         addBirthdayButton.setOnClickListener {
             createPopupForm()
+        }
+
+        privacyButton.setOnClickListener {
+            createAboutForm()
         }
 
         mainActivityRightButton.setOnClickListener {
@@ -137,9 +142,8 @@ class MainActivity : AppCompatActivity() {
         val dialog = AlertDialog.Builder(this)
         val popupView = layoutInflater.inflate(R.layout.activity_birthday_details_pop_up, null)
 
-
-        popupCancelButton = popupView.findViewById(R.id.buttonCancel)
-        popupSaveButton = popupView.findViewById(R.id.buttonSave)
+        var popupSaveButton: Button = popupView.findViewById(R.id.buttonSave)
+        var popupCancelButton: Button = popupView.findViewById(R.id.buttonCancel)
 
 
         val dialogInstance = dialog.setView(popupView).create()
@@ -251,6 +255,39 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
+
+    }
+
+    /**
+     * Creates a popup window
+     * Logic behind saving user entries
+     */
+    private fun createAboutForm() {
+        var (height, width) = getScreenDimensions(this)
+        height = (height*0.95).roundToInt()
+        width = (width*0.95).roundToInt()
+
+        val dialog = AlertDialog.Builder(this)
+        val popupView = layoutInflater.inflate(R.layout.about, null)
+
+
+        val popupCancelButton2: Button = popupView.findViewById(R.id.buttonCancel2)
+
+        val policyURL: TextView = popupView.findViewById(R.id.tvPrivacyText)
+        policyURL.setTextIsSelectable(true)
+
+
+        val dialogInstance = dialog.setView(popupView).create()
+        dialogInstance.show()
+        dialogInstance.window?.setLayout(width, height)
+
+
+
+        popupCancelButton2.setOnClickListener {
+            dialogInstance.dismiss()
+        }
+
+
 
     }
 

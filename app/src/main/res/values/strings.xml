@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">BirthdayReminder</string>
+    <string name="about_text">"Hi, I'm Sean, and this is my first app. There are no ads, and I won't track your personal info - so use it without worry!"</string>
+    <string name="privacy_url">https://github.com/seton-develops/BirthdayReminder/blob/master/Privacy_Policy_Notify-Me-Birthdays.txt</string>
 </resources>

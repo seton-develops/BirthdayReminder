@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.setonMyProjects.birthdayreminder.BirthdayDetailsPopUp">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topHORGUIDE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/midHORGUIDE1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/midHORGUIDE2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.80" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/midHORGUIDE3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/midHORGUIDE4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/midHORGUIDE5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/midHORGUIDE6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/midVERGUIDE0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/midVERGUIDE1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/midVERGUIDE2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/midVERGUIDE3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/midVERGUIDE4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/midVERGUIDE5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+
+    <ImageView
+        android:id="@+id/developerImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/midHORGUIDE1"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/topHORGUIDE"
+        app:srcCompat="@drawable/developer_image" />
+
+
+    <Button
+        android:id="@+id/buttonCancel2"
+        style="@android:style/TextAppearance.Large"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/roundcornerbutton"
+        android:backgroundTint="@color/light_gray"
+        android:text="Exit"
+        app:layout_constraintBottom_toTopOf="@+id/midHORGUIDE6"
+        app:layout_constraintDimensionRatio="2:1"
+        app:layout_constraintEnd_toStartOf="@+id/midVERGUIDE3"
+        app:layout_constraintStart_toStartOf="@+id/midVERGUIDE2"
+        app:layout_constraintTop_toTopOf="@+id/midHORGUIDE2"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/tvAboutMeTitle"
+        style="@android:style/TextAppearance.Large"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bangers"
+        android:gravity="center"
+        android:text="About"
+        android:textIsSelectable="true"
+        app:layout_constraintBottom_toTopOf="@+id/midHORGUIDE3"
+        app:layout_constraintEnd_toStartOf="@+id/midVERGUIDE4"
+        app:layout_constraintStart_toStartOf="@+id/midVERGUIDE1"
+        app:layout_constraintTop_toBottomOf="@+id/developerImage" />
+
+    <TextView
+        android:id="@+id/tvAboutMeText"
+        style="@android:style/TextAppearance.Small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="casual"
+        android:text="@string/about_text"
+        app:layout_constraintBottom_toTopOf="@+id/midHORGUIDE4"
+        app:layout_constraintEnd_toEndOf="@+id/midVERGUIDE5"
+        app:layout_constraintStart_toStartOf="@+id/midVERGUIDE0"
+        app:layout_constraintTop_toBottomOf="@+id/midHORGUIDE3" />
+
+    <TextView
+        android:id="@+id/tvPrivacyTitle"
+        style="@android:style/TextAppearance.Large"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bangers"
+        android:text="Privacy Policy"
+        app:layout_constraintBottom_toTopOf="@+id/midHORGUIDE5"
+        app:layout_constraintEnd_toStartOf="@+id/midVERGUIDE4"
+        app:layout_constraintStart_toStartOf="@+id/midVERGUIDE1"
+        app:layout_constraintTop_toTopOf="@+id/midHORGUIDE4" />
+
+    <TextView
+        android:id="@+id/tvPrivacyText"
+        style="@android:style/TextAppearance.Small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="@string/privacy_url"
+        app:layout_constraintBottom_toTopOf="@+id/midHORGUIDE2"
+        app:layout_constraintEnd_toEndOf="@+id/midVERGUIDE5"
+        app:layout_constraintStart_toStartOf="@+id/midVERGUIDE0"
+        app:layout_constraintTop_toTopOf="@+id/midHORGUIDE5"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
