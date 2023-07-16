@@ -1,6 +1,12 @@
 # BirthdayReminder
 Android App to store dates locally on the device and then send notifications on the day of the birthdays
 
+<p>
+  <img src="https://github.com/seton-develops/BirthdayReminder/blob/master/birthday%20app%201.png" width="180" height="360" />
+  <img src="https://github.com/seton-develops/BirthdayReminder/blob/master/birthday%20app%202.png" width="180" height="360" />
+  <img src="https://github.com/seton-develops/BirthdayReminder/blob/master/birthday%20app%203.png" width="180" height="360" />
+</p>
+
 ## About Me
 I am a self-taught android developer though I am currently working as a data analyst. This app is my first, and further updates to improve and streamline the code will be made in the future as my skills improve.
 
