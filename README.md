@@ -8,6 +8,9 @@ Android App to store dates locally on the device and then send notifications on 
   <img src="https://github.com/seton-develops/BirthdayReminder/blob/master/Screenshot_20230718_011744.png" width="180" height="360" />
 </p>
 
+## Youtube Demo
+[![Watch the video](https://img.youtube.com/vi/mTc_tZweklQ/default.jpg)](https://www.youtube.com/watch?v=mTc_tZweklQ)
+
 ## About Me
 I am a self-taught android developer though I am currently working as a data analyst. This app is my first, and further updates to improve and streamline the code will be made in the future as my skills improve.
 
