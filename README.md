@@ -5,6 +5,7 @@ Android App to store dates locally on the device and then send notifications on 
   <img src="https://github.com/seton-develops/BirthdayReminder/blob/master/birthday%20app%201.png" width="180" height="360" />
   <img src="https://github.com/seton-develops/BirthdayReminder/blob/master/birthday%20app%202.png" width="180" height="360" />
   <img src="https://github.com/seton-develops/BirthdayReminder/blob/master/birthday%20app%203.png" width="180" height="360" />
+  <img src="https://github.com/seton-develops/BirthdayReminder/blob/master/Screenshot_20230718_011744.png" width="180" height="360" />
 </p>
 
 ## About Me
